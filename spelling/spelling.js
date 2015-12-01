@@ -20,6 +20,8 @@ function Word(src, language) {
     this.voice = window.speechSynthesis.getVoices()[1];
     this.language = language || "en";
     this.translation = this.language == 'en' ? new Word('word','fr') : null;
+    this.language = language || "en" ;
+    this.translation = (this.language == 'en') ? new Word('word','fr') : null;
     this.say = function() {
         var msg = new SpeechSynthesisUtterance(this.src);
         msg.voice = this.voice;
