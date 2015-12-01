@@ -2,11 +2,11 @@
 var source = "cat can case";
 QUnit.test( "Test Word List", function( assert ) {
     var wordlist = new WordList(source);
-    assert.ok(wordlist);
-    assert.equal(3,wordlist.size())
-    assert.ok(wordlist.get(0))
+    //assert.ok(wordlist);
+    assert.equal(3, wordlist.size());
+    assert.ok(wordlist.get(0));
     assert.ok(wordlist.get(0).spelledRight( "Cat" ));
-    wordlist.sort()
+    wordlist.sort();
     assert.ok(wordlist.get(0).spelledRight( "Can" ));
     wordlist.get(0).say();
 });

@@ -1,0 +1,11 @@
+.bord{
+    border: solid black 1px;
+    font-size: x-large;
+    min-height: 50px;
+    text-align: center;
+}
+.newword{
+    height: 30px;
+    width: 200px;
+    font-size: large;
+}
