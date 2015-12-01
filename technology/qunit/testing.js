@@ -1,5 +1,5 @@
 
-function TypingModel(source){
+function TestingModel(source){
     this.sourceDocument = source;
     this.theirDocument = "";
     //If what the user has typed so far, equal to how far they got
@@ -27,7 +27,7 @@ function TypingModel(source){
 }
 var sourceDocument = "Ten letter";
 QUnit.test( "Accuracy", function( assert ) {
-    var model = new TypingModel(sourceDocument);
+    var model = new TestingModel(sourceDocument);
 
     assert.equal(model.isAccurate(), true);
     assert.equal(model.sourceDocument, sourceDocument);
